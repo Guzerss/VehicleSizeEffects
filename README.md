@@ -2,4 +2,4 @@ CV from: https://github.com/gta-chaos-mod/Trilogy-ASI-Script/blob/3.0/src/gtasa/
 
 Credits: Guzers, Lordmau5
 
-cmd: `/vehsize`
+cmd: `/vehsize` to open menu
