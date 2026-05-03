@@ -92,7 +92,8 @@ imgui.OnFrame(
     function() return WinState[0] end,
     function()
         imgui.SetNextWindowPos(imgui.ImVec2(SW / 2, SH / 2), imgui.Cond.FirstUseEver, imgui.ImVec2(0.5, 0.5))
-        imgui.Begin('Vehicle Size Effects', WinState, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize + imgui.WindowFlags.AlwaysAutoResize)
+        imgui.SetNextWindowSize(imgui.ImVec2(180 * MONET_DPI_SCALE, 0))
+        imgui.Begin('Vehicle Size', WinState, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize)
         imgui.PushItemWidth(imgui.GetContentRegionAvail().x)
         if imgui.Checkbox('Enable', enabled) then saveConfig() end
         imgui.Separator()
